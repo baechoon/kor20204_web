@@ -17,7 +17,6 @@ public class MemberDto {
         this.phone = phone;
     }
 
-
     public int getCode() {
         return code;
     }

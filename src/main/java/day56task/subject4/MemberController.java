@@ -36,11 +36,12 @@ public class MemberController {
    // 요청:http://localhost:8080/day56task/subject4/print?code=1
 
     @GetMapping("/print")
-    public boolean print(@RequestParam int code){
+    public MemberDto print(@RequestParam int code){
         System.out.println("MemberController.print");
         System.out.println("code = " + code);
-        return true;
-    }
+        MemberDto memberDto=new MemberDto();
+        return memberDto ;
+    } //--->잘 모르겠음
 
     //요청:http://localhost:8080/day56task/subject4/delete?code=1
    @DeleteMapping("/delete")
